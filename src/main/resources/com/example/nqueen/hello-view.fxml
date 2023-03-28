@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.ChoiceBox?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
@@ -33,24 +32,13 @@
             <Font name="Calibri" size="12.0" />
          </font>
       </Text>
-      <ImageView fitHeight="135.0" fitWidth="80.0" layoutX="613.0" layoutY="243.0">
-         <image>
-            <Image url="@../../../../../../pics/chessQueen-removebg-preview.png" />
-         </image>
-      </ImageView>
-      <Text fill="#201f1f" layoutX="43.0" layoutY="365.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Resolution method">
+      <Text fill="#201f1f" layoutX="39.0" layoutY="354.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pick a resolution method">
          <font>
             <Font name="Calibri" size="12.0" />
          </font>
       </Text>
-      <Button fx:id="lancer" alignment="CENTER" contentDisplay="TOP" graphicTextGap="2.0" layoutX="43.0" layoutY="487.0" mnemonicParsing="false" onAction="#switchToGameStart" prefHeight="28.0" prefWidth="71.0" style="-fx-background-color: #DB0513;" text="Start" textAlignment="CENTER" textFill="#2b0c0cc2" wrapText="true" AnchorPane.bottomAnchor="42.0" AnchorPane.leftAnchor="43.0">
-         <font>
-            <Font name="Calibri" size="12.0" />
-         </font>
-      </Button>
-      <ChoiceBox fx:id="method" layoutX="43.0" layoutY="378.0" prefHeight="28.0" prefWidth="71.0" style="-fx-background-color: #F9F1F1; -fx-border-width: 1; -fx-border-color: #201f1f;" />
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#0000009e" height="368.0" layoutX="178.0" layoutY="147.0" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" width="368.0" AnchorPane.bottomAnchor="42.0" AnchorPane.leftAnchor="178.0" AnchorPane.rightAnchor="161.0" />
-      <Pane fx:id="Boardchess" layoutX="182.0" layoutY="151.0" prefHeight="360.0" prefWidth="360.0">
+      <Pane fx:id="Boardchess" layoutX="182.0" layoutY="151.0" prefHeight="360.0" prefWidth="360.0" AnchorPane.bottomAnchor="46.0">
          <children>
             <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f9f1f1" height="45.0" stroke="BLACK" strokeType="INSIDE" width="45.0" />
             <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#201f1f" height="45.0" layoutX="45.0" stroke="BLACK" strokeType="INSIDE" width="45.0" />
@@ -116,38 +104,43 @@
             <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f9f1f1" height="45.0" layoutX="225.0" layoutY="315.0" stroke="BLACK" strokeType="INSIDE" width="45.0" />
             <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#201f1f" height="45.0" layoutX="270.0" layoutY="315.0" stroke="BLACK" strokeType="INSIDE" width="45.0" />
             <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f9f1f1" height="45.0" layoutX="315.0" layoutY="315.0" stroke="BLACK" strokeType="INSIDE" width="45.0" />
-            <ImageView fitHeight="28.0" fitWidth="28.0" layoutX="-31.0" layoutY="-31.0" x="40.0" y="40.0">
-               <image>
-                  <Image url="@../../../../../../pics/download-removebg-preview.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="28.0" fitWidth="28.0" layoutX="59.0" layoutY="14.0" x="40.0" y="40.0">
-               <image>
-                  <Image url="@../../../../../../pics/download-removebg-preview.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="28.0" fitWidth="28.0" layoutX="149.0" layoutY="59.0" x="40.0" y="40.0">
-               <image>
-                  <Image url="@../../../../../../pics/download-removebg-preview.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="28.0" fitWidth="28.0" layoutX="104.0" layoutY="149.0" x="40.0" y="40.0">
-               <image>
-                  <Image url="@../../../../../../pics/download-removebg-preview.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="28.0" fitWidth="28.0" layoutX="239.0" layoutY="194.0" x="40.0" y="40.0">
-               <image>
-                  <Image url="@../../../../../../pics/download-removebg-preview.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="28.0" fitWidth="28.0" layoutX="14.0" layoutY="284.0" x="40.0" y="40.0">
+            <ImageView fitHeight="93.0" fitWidth="58.0" layoutX="151.0" layoutY="151.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../../../../../pics/download-removebg-preview.png" />
                </image>
             </ImageView>
          </children>
       </Pane>
-      <TextField fx:id="boardSize" layoutX="327.0" layoutY="70.0" prefHeight="28.0" prefWidth="71.0" promptText="Size" style="-fx-background-color: #201F1F; -fx-border-color: 1.5; -fx-border-color: #605e5e;" />
+      <TextField fx:id="boardSize" layoutX="285.0" layoutY="70.0" prefHeight="28.0" prefWidth="71.0" promptText="Size" style="-fx-background-color: #201F1F; -fx-border-color: 1.5; -fx-border-color: #605e5e;" />
+      <Button fx:id="lancer1" alignment="CENTER" contentDisplay="TOP" graphicTextGap="2.0" layoutX="372.0" layoutY="69.0" mnemonicParsing="false" onAction="#switchToGameStart" prefHeight="28.0" prefWidth="71.0" style="-fx-background-color: #DB0513;" text="Resize" textAlignment="CENTER" textFill="#2b0c0cc2">
+         <font>
+            <Font name="Calibri" size="12.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="601.0" layoutY="228.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../pics/chessQueen-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="DFS" alignment="CENTER" contentDisplay="TOP" disable="true" graphicTextGap="2.0" layoutX="39.0" layoutY="370.0" mnemonicParsing="false" onAction="#switchToGame" prefHeight="28.0" prefWidth="71.0" style="-fx-background-color: #F9F1F1; -fx-border-color: #201f1f; -fx-font-size: 10.5;" text="DFS" textAlignment="CENTER" textFill="#050303" wrapText="true">
+         <font>
+            <Font name="Calibri" size="10.0" />
+         </font>
+      </Button>
+      <Button fx:id="BFS" alignment="CENTER" contentDisplay="TOP" disable="true" graphicTextGap="2.0" layoutX="39.0" layoutY="407.0" mnemonicParsing="false" onAction="#switchToGame" prefHeight="28.0" prefWidth="71.0" style="-fx-background-color: #F9F1F1; -fx-border-color: #201f1f; -fx-font-size: 10.5;" text="BFS" textAlignment="CENTER" textFill="#050303" wrapText="true">
+         <font>
+            <Font name="Calibri" size="10.0" />
+         </font>
+      </Button>
+      <Button fx:id="A1" alignment="CENTER" contentDisplay="TOP" disable="true" graphicTextGap="2.0" layoutX="39.0" layoutY="444.0" mnemonicParsing="false" onAction="#switchToGame" prefHeight="28.0" prefWidth="71.0" style="-fx-background-color: #F9F1F1; -fx-border-color: #201f1f; -fx-font-size: 10.5;" text="A * H1" textAlignment="CENTER" textFill="#050303" wrapText="true">
+         <font>
+            <Font name="Calibri" size="10.0" />
+         </font>
+      </Button>
+      <Button fx:id="A2" alignment="CENTER" contentDisplay="TOP" disable="true" graphicTextGap="2.0" layoutX="39.0" layoutY="483.0" mnemonicParsing="false" onAction="#switchToGame" prefHeight="28.0" prefWidth="71.0" style="-fx-background-color: #F9F1F1; -fx-border-color: #201f1f; -fx-font-size: 10.5;" text="A * H2" textAlignment="CENTER" textFill="#0a0a0a" wrapText="true" AnchorPane.bottomAnchor="46.0">
+         <font>
+            <Font name="Calibri" size="10.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>

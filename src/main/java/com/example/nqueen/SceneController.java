@@ -1,20 +1,25 @@
 package com.example.nqueen;
 
 
-        import java.io.IOException;
-
-        import javafx.event.ActionEvent;
-        import javafx.fxml.FXML;
-        import javafx.fxml.FXMLLoader;
-        import javafx.scene.*;
-        import javafx.scene.Parent;
-        import javafx.scene.layout.*;
-        import javafx.scene.layout.StackPane;
-        import javafx.scene.paint.Color;
-        import javafx.scene.shape.Rectangle;
-        import javafx.stage.Stage;
-        import javafx.collections.*;
-        import javafx.scene.control.*;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.scene.control.Button;
+import javafx.scene.control.ChoiceBox;
+import javafx.scene.control.TextField;
+import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.GridPane;
+import javafx.scene.layout.Pane;
+import javafx.scene.layout.StackPane;
+import javafx.scene.paint.Color;
+import javafx.scene.shape.Rectangle;
+import javafx.stage.Stage;
+import java.io.IOException;
 
 
 
@@ -23,6 +28,7 @@ public class SceneController {
 
     @FXML
     private Pane Boardchess;
+
 
     @FXML
     private TextField boardSize;
@@ -33,26 +39,14 @@ public class SceneController {
 
     @FXML
     private Button lancer;
-
-    @FXML
-    private ChoiceBox<?> method;
-
-
     @FXML
     private AnchorPane paneLwla;
-
     @FXML
     private AnchorPane pane;
-
-
     private Stage stage;
     private Scene scene;
     private Parent root;
     private int size = 8;
-
-
-
-
     @FXML
     public void switchToHome(ActionEvent event) throws IOException {
         root = FXMLLoader.load(getClass().getResource("hello-view.fxml"));
@@ -87,6 +81,7 @@ public class SceneController {
 
                 }
             }
+
             // Add the new chessboard to the pane
             StackPane stackPane = new StackPane();
             stackPane.getChildren().add(newChessboard);
@@ -98,6 +93,7 @@ public class SceneController {
             items.add(stackPane);
             // items.add(newChessboard);
     }
+    @FXML
     public void switchToGame(ActionEvent event) throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("ActualGame.fxml"));
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
@@ -105,6 +101,7 @@ public class SceneController {
         stage.setScene(scene);
         stage.show();
     }
+    @FXML
     public void switchToSatics(ActionEvent event) throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("statistics.fxml"));
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();

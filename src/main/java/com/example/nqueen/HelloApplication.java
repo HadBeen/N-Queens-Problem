@@ -4,7 +4,11 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.ComboBox;
+import javafx.scene.layout.HBox;
+import javafx.scene.shape.Box;
 import javafx.stage.Stage;
+import javafx.scene.control.ChoiceBox;
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.layout.GridPane;
@@ -23,6 +27,7 @@ public class HelloApplication extends Application {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
+
         primaryStage.setTitle("N Queen Home");
         primaryStage.setScene(new Scene(root, 707, 557));
         primaryStage.setResizable(false);
