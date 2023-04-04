@@ -4,21 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b8f049ab-0864-4685-9113-663660b4a65b" name="Changes" comment="Projet Meta heuristique n queens">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/nqueen/AStar1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/nqueen/AStar2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/nqueen/NodeStar.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/nqueen/Statistics.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/nqueen/BFSolution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/nqueen/BFSolution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/nqueen/DFSolution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/nqueen/DFSolution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/nqueen/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/nqueen/HelloApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/nqueen/NQueen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/nqueen/NQueen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/nqueen/SceneController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/nqueen/SceneController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/nqueen/ActualGame.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/nqueen/ActualGame.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/nqueen/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/nqueen/hello-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/nqueen/statistics.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/nqueen/statistics.fxml" afterDir="false" />
-    </list>
+    <list default="true" id="b8f049ab-0864-4685-9113-663660b4a65b" name="Changes" comment="Projet Meta heuristique n queens" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -114,7 +100,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679962484821</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Projet Meta heuristique n queens">
+      <created>1680588555349</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1680588555349</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
