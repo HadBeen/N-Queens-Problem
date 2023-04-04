@@ -28,7 +28,7 @@ public class HelloApplication extends Application {
             throw new RuntimeException(e);
         }
 
-        primaryStage.setTitle("N Queen Home");
+        primaryStage.setTitle("N Queen");
         primaryStage.setScene(new Scene(root, 707, 557));
         primaryStage.setResizable(false);
         primaryStage.show();

@@ -4,24 +4,30 @@ import java.util.*;
 
 public class BFSolution {
 
-    public static NQueen getSolutions(NQueen problem) {
+    public static Statistics getSolution(NQueen problem) {
+
+        long startTime = System.currentTimeMillis();
         Queue<NQueen> open  = new LinkedList<>();
         open.add(problem);
 
 
-        int counter = 0;
-
+        int generated = 1;
+        int developed = 0;
+        int visited = 0;
         while(open.size()!=0){
-            counter++;
+
             NQueen current = open.poll();
+            visited++;
             if(current.isFinalState()){
-                if(current.isValidNQueenSolution()){
-                    System.out.println(counter);
-                    return current;
+                if(current.isValidNQueenSolution(1)){
+                    long executionTime = System.currentTimeMillis() - startTime;
+                    return new Statistics(current , generated , developed , visited , executionTime);
                 }
-            }else {
+            }else{
+                developed++;
                 List<NQueen> childNodes = current.getNextNodes();
                 Collections.reverse(childNodes);
+                generated+=childNodes.size();
                 open.addAll(childNodes);
             }
         }
